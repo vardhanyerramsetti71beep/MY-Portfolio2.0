@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhan Yerramsetti — Resume (Python Full Stack, AWS Cloud, Data Science)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 10mm 14mm 10mm 14mm;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #111827;
+            background-color: #ffffff;
+            font-size: 9.2pt;
+            line-height: 1.36;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+            border-bottom: 2px solid #0f172a;
+            padding-bottom: 7px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 20pt;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        .title-badge {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #0284c7;
+            letter-spacing: 0.02em;
+            margin-bottom: 5px;
+        }
+        .contact-row {
+            font-size: 8.5pt;
+            color: #4b5563;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        .contact-row a {
+            color: #0369a1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-row a:hover {
+            text-decoration: underline;
+        }
+        .sep {
+            color: #9ca3af;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #0f172a;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .section-title-sub {
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        /* Summary */
+        .summary-text {
+            font-size: 8.8pt;
+            color: #334155;
+            text-align: justify;
+            line-height: 1.38;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 14px;
+            font-size: 8.6pt;
+        }
+        .skill-item {
+            color: #334155;
+        }
+        .skill-item strong {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        /* Projects */
+        .project-item {
+            margin-bottom: 7px;
+            page-break-inside: avoid;
+        }
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+        .item-title {
+            font-size: 9.2pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .item-tech {
+            font-size: 8pt;
+            font-family: "SF Mono", Menlo, Consolas, monospace;
+            color: #0284c7;
+            font-weight: 600;
+        }
+        .item-links {
+            font-size: 7.8pt;
+            color: #64748b;
+            margin-bottom: 2px;
+        }
+        .item-links a {
+            color: #0369a1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .item-links a:hover {
+            text-decoration: underline;
+        }
+        ul.bullets {
+            list-style-type: square;
+            padding-left: 15px;
+            font-size: 8.5pt;
+            color: #334155;
+            line-height: 1.34;
+        }
+        ul.bullets li {
+            margin-bottom: 1.5px;
+        }
+        ul.bullets li strong {
+            color: #0f172a;
+        }
+        code {
+            font-family: "SF Mono", Menlo, Consolas, monospace;
+            font-size: 8pt;
+            background-color: #f1f5f9;
+            padding: 1px 3px;
+            border-radius: 3px;
+            color: #0f172a;
+        }
+
+        /* Experience */
+        .exp-item {
+            margin-bottom: 7px;
+            page-break-inside: avoid;
+        }
+        .exp-role {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .exp-period {
+            font-size: 8pt;
+            font-family: "SF Mono", Menlo, Consolas, monospace;
+            color: #64748b;
+        }
+
+        /* Two Column Grid for Edu & Certs */
+        .edu-cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            page-break-inside: avoid;
+        }
+        .edu-card h4, .cert-card h4 {
+            font-size: 9pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .edu-meta {
+            font-size: 8.2pt;
+            color: #475569;
+            margin-top: 1px;
+        }
+        .cert-list {
+            list-style: none;
+            padding: 0;
+            font-size: 8.2pt;
+            color: #334155;
+        }
+        .cert-list li {
+            margin-bottom: 2px;
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+        .cert-bullet {
+            color: #0284c7;
+            font-size: 9pt;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>Vardhan Yerramsetti</h1>
+        <div class="title-badge">Python Full Stack Developer • AWS Certified Cloud Practitioner • Data Science</div>
+        <div class="contact-row">
+            <span>📞 +91 7386033417</span>
+            <span class="sep">•</span>
+            <span>✉️ <a href="mailto:vardhanyerramsetti71@gmail.com">vardhanyerramsetti71@gmail.com</a></span>
+            <span class="sep">•</span>
+            <span>📍 Andhra Pradesh, India</span>
+            <span class="sep">•</span>
+            <span>🌐 <a href="https://my-portfolio-vardhan-yerramsetti.vercel.app/" target="_blank">Live Portfolio</a></span>
+            <span class="sep">•</span>
+            <span>💻 <a href="https://github.com/vardhanyerramsetti71beep" target="_blank">github.com/vardhanyerramsetti71beep</a></span>
+            <span class="sep">•</span>
+            <span>👔 <a href="https://www.linkedin.com/in/vardhan-yerramsetti/" target="_blank">linkedin.com/in/vardhan-yerramsetti</a></span>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+        <div class="section-title">Professional Summary</div>
+        <p class="summary-text">
+            Results-driven <strong>Python Full Stack Developer</strong> and <strong>AWS Certified Cloud Practitioner</strong> with specialized expertise in <strong>Data Science, Machine Learning</strong>, and cloud microservices. Proficient in architecting high-throughput backend APIs using Flask and FastAPI, implementing mathematical and machine learning models (BG/NBD, Gamma-Gamma, OpenCV), engineering normalized relational database schemas with <strong>-25% query latency optimizations</strong>, and crafting reactive frontend applications in React.js and Next.js. Backed by 8 production deployments across AWS and Vercel.
+        </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-item"><strong>Languages:</strong> Python, JavaScript (ES6+), SQL, C++, HTML5, CSS3</div>
+            <div class="skill-item"><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3, RDS, Lambda, IAM), Vercel, Docker, Git/GitHub</div>
+            <div class="skill-item"><strong>Backend &amp; APIs:</strong> Flask, FastAPI, Django, RESTful APIs, Serverless, JWT Auth</div>
+            <div class="skill-item"><strong>Databases:</strong> MySQL, PyMySQL, Relational 3NF, Compound B-Tree Indexing (-25%)</div>
+            <div class="skill-item"><strong>Data Science &amp; ML:</strong> OpenCV, Scikit-learn, BG/NBD, Gamma-Gamma, Plotly 3D WebGL</div>
+            <div class="skill-item"><strong>Frontend:</strong> React.js 19, Next.js, Tailwind CSS, DOM Manipulation, SPAs</div>
+        </div>
+    </section>
+
+    <!-- Key Technical Projects -->
+    <section>
+        <div class="section-title">
+            <span>Key Technical Projects</span>
+            <span class="section-title-sub">Verified Live Deployments &amp; Source Code</span>
+        </div>
+
+        <!-- 1. Scalable Task Cloud Portal -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">Scalable Task &amp; Data Management Cloud Portal</span>
+                <span class="item-tech">Python, Flask REST API, React.js, MySQL, AWS EC2/S3, Docker</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://task-cloud-portal.vercel.app/" target="_blank">task-cloud-portal.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/task-cloud-portal" target="_blank">github.com/vardhanyerramsetti71beep/task-cloud-portal</a>
+            </div>
+            <ul class="bullets">
+                <li>Architected a responsive multi-tenant cloud portal with strict organization data isolation across tasks, assets, and audit logs.</li>
+                <li>Engineered compound B-Tree indexes on <code>(tenant_id, status)</code> in MySQL, reducing query execution latency by <strong>25%</strong> (18.4ms to 13.8ms).</li>
+                <li>Decoupled binary storage into <strong>Amazon S3</strong> with TLS 1.2+ security policies and containerized execution on <strong>AWS EC2</strong> via Docker.</li>
+            </ul>
+        </div>
+
+        <!-- 2. OmniPulse CLV & Retention Engine -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">OmniPulse Enterprise CLV &amp; Customer Retention Prediction Engine</span>
+                <span class="item-tech">FastAPI, Scikit-learn, BG/NBD, Gamma-Gamma, Python</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://omni-pulse-enterprise-clv-churn-int-teal.vercel.app/" target="_blank">omni-pulse-enterprise-clv-churn-int-teal.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/OmniPulse-Enterprise-CLV-Churn-Intelligence-Engine" target="_blank">GitHub Repo</a>
+            </div>
+            <ul class="bullets">
+                <li>Implemented <strong>Beta-Geometric/Negative Binomial (BG/NBD)</strong> probabilistic models to compute real-time customer vitality probability <code>P(Alive)</code>.</li>
+                <li>Integrated <strong>Gamma-Gamma</strong> monetary sub-models to forecast 12-month expected customer lifetime value (CLV) with sub-15ms prediction latency.</li>
+                <li>Designed high-throughput in-memory REST inference endpoints with Pydantic contract validation for churn risk triage.</li>
+            </ul>
+        </div>
+
+        <!-- 3. Music Emotion Recommender -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">Music Recommendation System Based on Facial Expression Recognition</span>
+                <span class="item-tech">Python, Flask REST API, OpenCV, Scikit-learn, WebRTC</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://music-recommending.vercel.app/" target="_blank">music-recommending.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/music-recommending" target="_blank">GitHub Repo</a>
+            </div>
+            <ul class="bullets">
+                <li>Built an end-to-end computer vision pipeline analyzing facial expressions via live webcam video stream with <strong>&gt;90% classification accuracy</strong>.</li>
+                <li>Engineered high-throughput Flask RESTful APIs managing asynchronous model inference and targeted audio playlist dispatch.</li>
+                <li>Optimized frame processing pipelines using OpenCV for low-latency facial landmark extraction in production environments.</li>
+            </ul>
+        </div>
+
+        <!-- 4. 90-Day Body Transformation 3D Manifolds -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">90-Day Body Transformation Biometric 3D Manifolds Dashboard</span>
+                <span class="item-tech">Python, Plotly 3D WebGL, Biometrics, HTML5/CSS3, JavaScript</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://90-days-body-transformation.vercel.app/" target="_blank">90-days-body-transformation.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/90-Days-Body-Transformation" target="_blank">GitHub Repo</a>
+            </div>
+            <ul class="bullets">
+                <li>Developed a biometric analytics platform converting time-series physical measurements into interactive <strong>Plotly 3D WebGL surface meshes</strong>.</li>
+                <li>Implemented mathematical data smoothing algorithms to track morphological variations across circumference, body fat %, and caloric intake timelines.</li>
+                <li>Engineered interactive 3D spatial rotation controls and temporal telemetry sliders for exploratory health metrics analysis.</li>
+            </ul>
+        </div>
+
+        <!-- 5. SVT Tailors Atelier -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">S.V.T. Tailors Bespoke Atelier &amp; 5-Stage Workshop Tracker</span>
+                <span class="item-tech">Python Serverless, MySQL, PyMySQL, React.js, Tailwind CSS</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://svt-tailors.vercel.app/" target="_blank">svt-tailors.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/S.V.T.Tailors" target="_blank">GitHub Repo</a>
+            </div>
+            <ul class="bullets">
+                <li>Built an end-to-end digital atelier configurator with dynamic parametric garment customizer (fabrics, collar, cuffs, measurements).</li>
+                <li>Architected a 5-stage workshop state machine (<em>Order Logged → Fabric Cut → Master Stitch → Steam Press → Ready</em>) in MySQL with <strong>&lt;35ms latency</strong>.</li>
+                <li>Engineered public tracking portal providing transparent visibility into handcrafted garment fabrication milestones.</li>
+            </ul>
+        </div>
+
+        <!-- 6. MS Pickles Store -->
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">MS Pickles Artisanal Andhra E-Commerce Platform</span>
+                <span class="item-tech">JavaScript (ES6+), HTML5/CSS3, Tailwind CSS, LocalStorage, Vercel</span>
+            </div>
+            <div class="item-links">
+                Live App: <a href="https://ms-pickles.vercel.app/" target="_blank">ms-pickles.vercel.app</a> • 
+                Code: <a href="https://github.com/vardhanyerramsetti71beep/MS-pickles" target="_blank">GitHub Repo</a>
+            </div>
+            <ul class="bullets">
+                <li>Engineered a responsive, mobile-first artisanal food e-commerce platform with dynamic flavor filtering and localized regional UX.</li>
+                <li>Implemented persistent client-side cart state management supporting real-time price calculations, quantity updates, and local storage hydration.</li>
+                <li>Optimized critical rendering paths and asset delivery, achieving sub-second first contentful paint (FCP).</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+        <div class="section-title">Work Experience</div>
+        
+        <div class="exp-item">
+            <div class="item-header">
+                <span class="exp-role">Operations &amp; Logistics Associate — Instakart Services Pvt. Ltd. (Flipkart Logistics)</span>
+                <span class="exp-period">Jan 2026 – Apr 2026</span>
+            </div>
+            <ul class="bullets">
+                <li>Supervised real-time warehouse operations, order dispatch processing, and inventory databases, maintaining <strong>99% data integrity</strong>.</li>
+                <li>Coordinated cross-functional workflows between ground teams and dispatch systems, eliminating bottlenecks and driving a <strong>15% increase in throughput</strong>.</li>
+                <li>Conducted root-cause telemetry audits across fulfillment logistics pipelines to minimize order variance and transit latency.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="item-header">
+                <span class="exp-role">Teaching Assistant (Computer Science) — Sri Srinivasa Gravity Junior College</span>
+                <span class="exp-period">Jun 2022 – Aug 2022</span>
+            </div>
+            <ul class="bullets">
+                <li>Mentored 40+ engineering aspirants in fundamental computer science principles, Object-Oriented Programming (OOP), and algorithmic problem-solving.</li>
+                <li>Conducted weekly practical debugging labs in Python and C++ to build foundational algorithmic fluency.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="item-header">
+                <span class="exp-role">Direct Marketing Coordinator — Future Generali Total Health Insurance</span>
+                <span class="exp-period">Aug 2022 – Jan 2023</span>
+            </div>
+            <ul class="bullets">
+                <li>Executed targeted digital campaigns across multi-touch customer channels, engaging 5,000+ prospective leads.</li>
+                <li>Analyzed conversion telemetry and customer demographic funnels, driving a 10% uplift in qualified lead acquisition.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="edu-cert-grid">
+        <div class="edu-card">
+            <div class="section-title">Education</div>
+            <h4>Bachelor of Technology (B.Tech) — Computer Science and Engineering</h4>
+            <div class="edu-meta">Jawaharlal Nehru Technological University (JNTU) Kakinada • 2018 – 2026</div>
+            <div class="edu-meta"><strong>CGPA:</strong> 6.5 / 10.0</div>
+            <div class="edu-meta" style="font-size: 7.8pt; color: #64748b; margin-top: 2px;">Core: Data Structures, Database Management, Operating Systems, Computer Networks</div>
+        </div>
+
+        <div class="cert-card">
+            <div class="section-title">Certifications</div>
+            <ul class="cert-list">
+                <li><span class="cert-bullet">✔</span> <strong>AWS Certified Cloud Practitioner</strong> — Amazon Web Services (2023)</li>
+                <li><span class="cert-bullet">✔</span> <strong>AWS Academy Graduate: Cloud Foundations</strong> — AWS (2023)</li>
+                <li><span class="cert-bullet">✔</span> <strong>Android Enterprise Associate</strong> — Google (2022)</li>
+                <li><span class="cert-bullet">✔</span> <strong>Cisco Networking Essentials</strong> — Cisco Networking Academy (2022)</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
