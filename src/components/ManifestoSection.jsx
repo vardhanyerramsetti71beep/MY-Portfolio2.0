@@ -3,24 +3,24 @@ import React from 'react';
 
 export default function ManifestoSection() {
   return (
-    <section className="about" id="about" aria-label="Engineering Philosophy">
-      <div className="about-kicker">PHILOSOPHY // 0xCORE</div>
+    <section className="about" id="about" aria-label="About">
+      <div className="about-kicker">ABOUT</div>
 
       <p className="manifesto" id="manifesto">
-        I engineer at the boundary where high-throughput backend systems meet cloud infrastructure and applied machine intelligence. From relational query latency optimization and normalized 3NF schemas to asynchronous microservices, I build software that performs with uncompromising speed, resilience, and mathematical clarity.
+        I build where Python backends meet cloud infrastructure and applied machine learning. From normalized MySQL schemas and query tuning to FastAPI services and OpenCV pipelines, I care about software that is fast, reliable, and measurable.
       </p>
 
       <div className="about-cols">
         <div>
-          <h4 className="about-subhead">Deterministic Scale &amp; Database Latency</h4>
+          <h4 className="about-subhead">Databases &amp; Performance</h4>
           <p>
-            Shipped 8 production platforms across AWS and Vercel. Measured a verified 25% query latency reduction by restructuring relational database schemas and building compound B-Tree indexes. When systems buckle under load, the fix is rarely adding more memory—it is eliminating architectural bottlenecks at the data layer.
+            Shipped 8 live projects across AWS and Vercel. Cut query time from 18.4ms to 13.8ms (-25%) by adding compound B-Tree indexes on (tenant_id, status). When a system slows down, I look at the data layer first.
           </p>
         </div>
         <div>
-          <h4 className="about-subhead">Cloud Foundation &amp; AWS Mastery</h4>
+          <h4 className="about-subhead">Cloud &amp; AWS</h4>
           <p>
-            Officially certified by Amazon Web Services as an AWS Certified Cloud Practitioner. Proven command over EC2 compute instances, S3 object storage lakes, IAM least-privilege security perimeters, and containerized Docker deployments. Ready to deliver immediate impact on Day 1.
+            AWS Certified Cloud Practitioner (2023). Hands-on with EC2 hosting, S3 storage with TLS 1.2+ policies, IAM least-privilege access, and Docker containers in deployed projects.
           </p>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
     },
     {
       name: 'AWS Cloud Architecture & Security',
-      desc: 'Officially certified AWS Cloud Practitioner. Secure EC2 compute provisioning, S3 asset lakes, and IAM least-privilege security perimeters.',
+      desc: 'AWS Certified Cloud Practitioner. EC2 hosting, S3 storage, and IAM least-privilege access in deployed projects.',
       img: '/assets/tiles/tile-5.svg',
     },
     {
@@ -22,19 +22,19 @@ export default function CapabilitiesSection({ onOpenResume }) {
     },
     {
       name: 'Applied Machine Learning & Computer Vision',
-      desc: 'Real-time OpenCV facial landmark feature extraction, Scikit-learn >90% classification, and BG/NBD customer retention models under 85ms.',
+      desc: 'Real-time OpenCV facial landmark feature extraction, Scikit-learn >90% classification, and BG/NBD customer retention models with sub-15ms predictions.',
       img: '/assets/tiles/tile-2.svg',
     },
     {
       name: 'High-Fidelity Full-Stack & Web Audio',
-      desc: 'React.js, Next.js 14, Tailwind CSS design systems, Web Audio synthesizers, and buttery-smooth 60/120 FPS kinetic typography.',
+      desc: 'React.js, Next.js 14, Tailwind CSS, and the Web Audio API, including the animation and sound on this site.',
       img: '/assets/tiles/tile-4.svg',
     },
   ];
 
   return (
-    <section className="services" id="services" aria-label="Capabilities and Recruiter Hub">
-      <h2 className="services-head">Core Architectural Capabilities // Specializations</h2>
+    <section className="services" id="services" aria-label="Skills and Why Hire Me">
+      <h2 className="services-head">Skills</h2>
 
       <ul className="svc-list">
         {capabilities.map((svc, idx) => (
@@ -65,13 +65,13 @@ export default function CapabilitiesSection({ onOpenResume }) {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-400/40 text-cyan-300 text-xs font-mono tracking-wider mb-3">
               <Award className="w-3.5 h-3.5" />
-              <span>RECRUITER BRIEFING // IMMEDIATE PRODUCTIVITY</span>
+              <span>FOR RECRUITERS</span>
             </div>
             <h3 className="font-display font-black text-2xl sm:text-3xl text-white">
-              Why Hire Vardhan on Day 1?
+              Why Hire Me
             </h3>
             <p className="text-slate-400 text-sm sm:text-base mt-1 max-w-xl">
-              Zero ramp-up friction. Backed by 8 production deployments, an official AWS certification, and proven query performance enhancements.
+              8 live projects, an AWS certification, and measured performance results.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               data-cursor="Resume"
             >
               <FileText className="w-4 h-4 mr-2" />
-              <span>Open ATS Resume Vault</span>
+              <span>View Resume</span>
             </button>
             <a
               href="https://wa.me/917386033417?text=Hi%20Vardhan,%20I%20reviewed%20your%20Freefall%20Cinematic%20Portfolio%20and%20would%20love%20to%20discuss%20an%20engineering%20role!"
@@ -94,7 +94,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               className="btn"
               data-cursor="WhatsApp"
             >
-              <span>Instant WhatsApp</span>
+              <span>WhatsApp</span>
               <ArrowUpRight className="w-4 h-4 ml-1" />
             </a>
           </div>
@@ -106,10 +106,10 @@ export default function CapabilitiesSection({ onOpenResume }) {
               <Zap className="w-4 h-4" />
             </div>
             <h4 className="font-mono text-xs font-bold text-slate-200 uppercase tracking-wider mb-1">
-              8 Shipped Platforms
+              8 Live Projects
             </h4>
             <p className="text-slate-400 text-xs leading-relaxed">
-              Full-stack architectures live on Vercel and AWS with public GitHub repositories and clean Git histories.
+              Full-stack projects live on Vercel and AWS, each with a public GitHub repository.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               AWS Certified
             </h4>
             <p className="text-slate-400 text-xs leading-relaxed">
-              Validated AWS Cloud Practitioner with solid grounding in EC2, S3, IAM security, and serverless architectures.
+              AWS Certified Cloud Practitioner (2023), with hands-on EC2, S3, IAM, and Lambda.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               Applied Machine Learning
             </h4>
             <p className="text-slate-400 text-xs leading-relaxed">
-              OpenCV biometric facial classification (&gt;90% accuracy) and BG/NBD probabilistic churn models streaming under 85ms.
+              OpenCV facial-expression classification (&gt;90% accuracy) and BG/NBD churn models with sub-15ms predictions.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Vardhan Yerramsetti",
   title: "Python Full Stack Developer & AWS Certified Cloud Practitioner",
   subtitle: "High-Throughput Microservices • Enterprise Cloud Architectures • Real-Time Computer Vision & ML",
-  tagline: "I engineer high-concurrency systems that cut latencies and scale past millions. Ready to ship on Day 1.",
+  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 8 projects live today.",
   location: "Andhra Pradesh, India",
   email: "vardhanyerramsetti71@gmail.com",
   phone: "+91 7386033417",
@@ -14,10 +14,10 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/vardhan-yerramsetti/",
   livePortfolio: "https://my-portfolio-vardhan-yerramsetti.vercel.app/",
   resumePdf: "/Vardhan_Yerramsetti_Resume.pdf",
-  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with demonstrated mastery in architecting low-latency microservices, deploying robust machine learning pipelines, and optimizing relational databases with -25% query latency reductions. Backed by 8 production deployments across AWS and Vercel.",
+  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 8 production deployments across AWS and Vercel.",
   hook: "Zero-fluff engineering. Measurable throughput. Production-proven cloud microservices.",
   metrics: [
-    { label: "Production Web Apps", value: "8", suffix: " Live", detail: "Active on Vercel & AWS with zero downtime" },
+    { label: "Production Web Apps", value: "8", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
     { label: "Query Latency Reduction", value: "-25", suffix: "%", detail: "Compound B-Tree indexing on relational schemas" },
     { label: "Computer Vision Accuracy", value: ">90", suffix: "%", detail: "Real-time OpenCV multi-class emotion classification" },
     { label: "Data Integrity & Logistics", value: "99", suffix: "%", detail: "Supervised high-volume supply chain operations at Flipkart" }
@@ -28,22 +28,22 @@ export const RECRUITER_PILLARS = [
   {
     icon: "Rocket",
     title: "Immediate Day-1 Productivity",
-    desc: "Shipped 8 full-stack production platforms end-to-end. Experienced with CI/CD, Git workflows, modular codebases, and modern deployment edges."
+    desc: "Shipped 8 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
   },
   {
     icon: "Cloud",
     title: "AWS Certified Cloud Foundation",
-    desc: "Officially certified by Amazon Web Services. Hands-on expertise architecting EC2 instances, S3 object lakes, Lambda serverless, and IAM security perimeters."
+    desc: "AWS Certified Cloud Practitioner (2023). Hands-on with EC2, S3, RDS, Lambda, and IAM in deployed projects."
   },
   {
     icon: "Zap",
-    title: "Engineered for Extreme Latency Cut",
-    desc: "Measured 25% query speedup by optimizing MySQL relational schemas and indexing. Strong command of FastAPI asynchronous endpoints and Flask microservices."
+    title: "Measured Performance Gains",
+    desc: "Cut MySQL query time from 18.4ms to 13.8ms (-25%) with compound B-Tree indexes. Builds REST APIs in FastAPI and Flask."
   },
   {
     icon: "Brain",
     title: "Data Science & Applied ML",
-    desc: "Built working probabilistic customer lifetime value models (BG/NBD & Gamma-Gamma) and real-time computer vision classifiers streaming audio vectors under 85ms."
+    desc: "Built working probabilistic customer lifetime value models (BG/NBD & Gamma-Gamma) with sub-15ms prediction latency, and a webcam facial-expression classifier with >90% accuracy."
   }
 ];
 
@@ -59,7 +59,7 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/task-cloud-portal",
     metrics: [
       { label: "Query Latency", value: "-25%" },
-      { label: "Storage Resilience", value: "99.99%" },
+      { label: "Query Time", value: "18.4→13.8ms" },
       { label: "Auth Token Security", value: "JWT Stateless" }
     ],
     pitch: "Engineered a high-availability multi-tenant cloud task and asset management portal with strict relational isolation.",
@@ -77,10 +77,10 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/music-recommending",
     metrics: [
       { label: "Classification Accuracy", value: ">90%" },
-      { label: "Stream Latency", value: "<85ms" },
-      { label: "User Engagement", value: "+20%" }
+      { label: "Input", value: "Live Webcam" },
+      { label: "Model", value: "Scikit-learn" }
     ],
-    pitch: "Replaced static song picking with real-time biometric emotion classification streaming audio within 85ms.",
+    pitch: "Recommends music based on your facial expression, read live from the webcam.",
     solution: "Engineered an end-to-end computer vision and microservice pipeline analyzing facial expressions via webcam stream. Utilized OpenCV landmark detection coupled with a Scikit-learn multi-class model (Happy, Sad, Neutral, Energetic), streaming mood vectors into a responsive Flask RESTful API that delivers targeted audio playback.",
     architecture: "Webcam Video Stream ➔ OpenCV Frame Extraction ➔ Facial Feature Matrix ➔ ML Emotion Classifier ➔ Flask REST API ➔ Reactive Track Dispatcher"
   },
@@ -96,7 +96,7 @@ export const PROJECTS = [
     metrics: [
       { label: "Probabilistic Model", value: "BG/NBD" },
       { label: "Monetary Value", value: "Gamma-Gamma" },
-      { label: "Prediction Horizon", value: "12 Months" }
+      { label: "Prediction Latency", value: "<15ms" }
     ],
     pitch: "Statistical customer equity forecasting distinguishing churned buyers from active latent purchasers.",
     solution: "Developed an enterprise retention microservice utilizing Beta-Geometric/Negative Binomial Distribution (BG/NBD) for purchase frequency and Gamma-Gamma sub-models for monetary value. Computes live probability of being active P(Alive) and forecasts 12-month expected customer equity.",
@@ -113,8 +113,8 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/S.V.T.Tailors",
     metrics: [
       { label: "Workshop Stages", value: "5 States" },
-      { label: "Query Execution", value: "-35ms" },
-      { label: "Tracking Precision", value: "100%" }
+      { label: "Stage Updates", value: "<35ms" },
+      { label: "Order Tracking", value: "Public Portal" }
     ],
     pitch: "Replaced chaotic manual order logs with an automated 5-stage workshop fabrication tracker.",
     solution: "Built a production-grade digital atelier interface and tracking engine. Includes a dynamic garment customization configurator (fabrics, collar, cuffs, measurements) coupled with a serverless Python backend persisting orders into normalized MySQL schemas with a 5-stage live status pipeline: Order Logged ➔ Fabric Cut ➔ Master Stitch ➔ Steam Press ➔ Ready for Delivery.",
@@ -131,8 +131,8 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/MS-pickles",
     metrics: [
       { label: "Catalog Items", value: "15+ SKUs" },
-      { label: "Checkout Cart Sync", value: "100%" },
-      { label: "Lighthouse Score", value: "98/100" }
+      { label: "Cart", value: "LocalStorage" },
+      { label: "First Paint", value: "<1s" }
     ],
     pitch: "Ultra-fast direct-to-consumer e-commerce storefront for authentic Andhra pickles with zero CMS bloat.",
     solution: "Designed and deployed a modern direct-to-consumer e-commerce storefront for authentic Andhra pickles and podis. Built using modular vanilla ES6+ architecture and utility-first Tailwind CSS, featuring instantaneous category filters, dynamic weight-based pricing, persistent shopping cart management, and seamless WhatsApp ordering.",
@@ -149,7 +149,7 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/They-call-him-og",
     metrics: [
       { label: "Video Loops", value: "5 Native MP4s" },
-      { label: "Performance", value: "60 FPS" },
+      { label: "Framework", value: "Next.js 14" },
       { label: "Showcase Tour", value: "55s Guided" }
     ],
     pitch: "High-fidelity interactive media showcase with synchronized HTML5 video loops and ambient sound.",
@@ -185,7 +185,7 @@ export const PROJECTS = [
     github: "https://github.com/vardhanyerramsetti71beep/google-forms-",
     metrics: [
       { label: "Schema Compliant", value: "3NF Normal" },
-      { label: "Validation Speed", value: "<15ms" },
+      { label: "ORM", value: "SQLAlchemy" },
       { label: "Question Types", value: "Dynamic" }
     ],
     pitch: "Full-featured survey generation engine with dynamic relational schema binding in MySQL.",
@@ -264,14 +264,14 @@ export const EXPERIENCE = [
     location: "Andhra Pradesh, India",
     type: "Industry Operations & Data Integrity",
     highlights: [
-      "Audited and monitored real-time warehouse data telemetry, order dispatch pipelines, and inventory databases, maintaining 99% data accuracy.",
-      "Coordinated cross-functional workflows between ground teams and dispatch systems, eliminating operational bottlenecks and achieving a 15% increase in daily order throughput.",
+      "Supervised real-time warehouse operations, order dispatch processing, and inventory databases, maintaining 99% data integrity.",
+      "Coordinated cross-functional workflows between ground teams and dispatch systems, eliminating bottlenecks and driving a 15% increase in throughput.",
       "Conducted root-cause telemetry audits across fulfillment logistics pipelines to minimize order variance and transit latency."
     ],
     stats: [
       { label: "Data Integrity", value: "99%" },
       { label: "Throughput Boost", value: "+15%" },
-      { label: "Bottlenecks Eliminated", value: "100%" }
+      { label: "Scope", value: "Dispatch & Inventory" }
     ]
   },
   {
@@ -284,13 +284,12 @@ export const EXPERIENCE = [
     type: "Academic Mentorship & Technical Training",
     highlights: [
       "Mentored 40+ engineering aspirants in fundamental computer science principles, Object-Oriented Programming (OOP), and algorithmic problem-solving.",
-      "Conducted weekly practical debugging labs, evaluating logic implementations in Python and C++ to build rock-solid foundational fluency.",
-      "Assisted senior computer science faculty in designing technical assignments and measuring academic milestone progression."
+      "Conducted weekly practical debugging labs in Python and C++ to build foundational algorithmic fluency."
     ],
     stats: [
       { label: "Students Mentored", value: "40+" },
       { label: "Core Focus", value: "DSA & OOP" },
-      { label: "Lab Success", value: "100%" }
+      { label: "Labs", value: "Weekly" }
     ]
   },
   {
@@ -303,8 +302,7 @@ export const EXPERIENCE = [
     type: "Data-Driven Marketing Analytics",
     highlights: [
       "Executed targeted digital campaigns across multi-touch customer channels, engaging 5,000+ prospective leads.",
-      "Analyzed conversion telemetry and customer demographic funnels alongside sales teams, driving a 10% uplift in qualified lead acquisition.",
-      "Synthesized quantitative campaign performance reports to optimize marketing resource allocation and customer retention touchpoints."
+      "Analyzed conversion data and customer demographic funnels, driving a 10% uplift in qualified lead acquisition."
     ],
     stats: [
       { label: "Prospects Reached", value: "5,000+" },
@@ -321,12 +319,10 @@ export const EDUCATION = {
   period: "2018 – 2026",
   cgpa: "6.5 / 10.0",
   coursework: [
-    "Database Management Systems (DBMS)",
-    "Data Structures & Algorithms (DSA)",
-    "Cloud Computing & Distributed Systems",
-    "Web Application Architecture",
-    "Computer Networks & Protocols",
-    "Object-Oriented Programming (OOP)"
+    "Data Structures",
+    "Database Management",
+    "Operating Systems",
+    "Computer Networks"
   ]
 };
 
@@ -351,7 +347,7 @@ export const CERTIFICATIONS = [
     status: "Verified Graduate",
     icon: "ShieldCheck",
     skills: ["High Availability", "Elastic Load Balancing", "CloudWatch Monitoring", "Architectural Best Practices"],
-    desc: "Rigorous AWS-designed practical curriculum covering scalable systems, cloud operational excellence, and distributed architectures."
+    desc: "AWS Academy course covering core cloud concepts, AWS services, security, architecture, and pricing."
   },
   {
     id: "android-enterprise",
@@ -362,7 +358,7 @@ export const CERTIFICATIONS = [
     status: "Certified Associate",
     icon: "Smartphone",
     skills: ["Enterprise Fleet Management", "Mobile Security", "Application Distribution"],
-    desc: "Certified by Google in deploying, provisioning, and securing modern enterprise Android fleets and mobile ecosystem security."
+    desc: "Google certification covering Android Enterprise deployment, device management, and security basics."
   },
   {
     id: "cisco-networking",
@@ -370,9 +366,9 @@ export const CERTIFICATIONS = [
     issuer: "Cisco Networking Academy",
     year: "2022",
     badge: "Computer Networks",
-    status: "Certified Specialist",
+    status: "Completed",
     icon: "Network",
     skills: ["TCP/IP", "Subnetting", "Routing & Switching", "Network Security Protocols", "DNS / DHCP"],
-    desc: "Validated comprehensive mastery of network protocol stacks, IP addressing, perimeter firewall defense, and OSI network topologies."
+    desc: "Cisco Networking Academy course covering network fundamentals, IP addressing, and the OSI model."
   }
 ];
