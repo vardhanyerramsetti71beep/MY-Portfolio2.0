@@ -25,19 +25,14 @@ export default function Navbar({ onToggleMenu, onOpenResume }) {
           <i></i>
           <i></i>
         </span>
-        <span>System Index</span>
+        <span>Menu</span>
       </button>
 
       <a className="nav-mark" href="#top" data-jump="top" data-cursor="Ascend">
-        Vardhan Yerramsetti® <em>systems &amp; full-stack architect</em>
+        Vardhan Yerramsetti <em>python full stack developer</em>
       </a>
 
       <div className="nav-right">
-        <div className="nav-visual-tag" id="visualModeTag" title="Hybrid Engine: Procedural Canvas + 3D Kinetic World">
-          <span className="mode-dot"></span>
-          <span className="mode-text">HYBRID GENERATIVE 3D</span>
-        </div>
-
         <button 
           className="nav-sound" 
           id="soundBtn" 
@@ -60,11 +55,11 @@ export default function Navbar({ onToggleMenu, onOpenResume }) {
           data-cursor="Resume"
         >
           <FileText className="w-3.5 h-3.5" />
-          <span>Resume Vault</span>
+          <span>Resume</span>
         </button>
 
         <a className="nav-talk btn-pill" href="#contact" data-jump="contact" data-cursor="Connect">
-          Initiate Uplink
+          Contact
         </a>
       </div>
     </header>

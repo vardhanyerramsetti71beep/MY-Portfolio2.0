@@ -6,15 +6,12 @@ export default function SystemIndexModal({ isOpen, onClose }) {
   const [previewImg, setPreviewImg] = useState('/assets/projects/nexus-core.svg');
 
   const menuItems = [
-    { label: 'The Descent', jump: 'story:0', img: '/assets/tiles/tile-1.svg' },
-    { label: 'Signal vs Noise', jump: 'story:0.53', img: '/assets/tiles/tile-2.svg' },
-    { label: 'Synapse Emergence', jump: 'story:0.77', img: '/assets/tiles/tile-5.svg' },
-    { label: 'Flagship Architectures', jump: 'work', img: '/assets/projects/nexus-core.svg' },
-    { label: 'Engineering Philosophy', jump: 'about', img: '/assets/tiles/tile-4.svg' },
-    { label: 'Capabilities & Recruiter Hub', jump: 'services', img: '/assets/projects/synapse-db.svg' },
-    { label: '8 Production Deployments', jump: 'deployments', img: '/assets/projects/prism-ai.svg' },
-    { label: 'The Quantum Gateway', jump: 'portal', img: '/assets/projects/aether-mesh.svg' },
-    { label: 'Terminal Uplink', jump: 'contact', img: '/assets/tiles/tile-7.svg' },
+    { label: 'Intro', jump: 'story:0', img: '/assets/tiles/tile-1.svg' },
+    { label: 'Featured Projects', jump: 'work', img: '/assets/projects/nexus-core.svg' },
+    { label: 'About', jump: 'about', img: '/assets/tiles/tile-4.svg' },
+    { label: 'Skills & Why Hire Me', jump: 'services', img: '/assets/projects/synapse-db.svg' },
+    { label: 'All 8 Projects', jump: 'deployments', img: '/assets/projects/prism-ai.svg' },
+    { label: 'Contact', jump: 'contact', img: '/assets/tiles/tile-7.svg' },
   ];
 
   const handleMouseEnter = (img) => {

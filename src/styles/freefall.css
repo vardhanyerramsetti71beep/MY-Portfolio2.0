@@ -1088,7 +1088,7 @@ html.has-cursor .cursor {
   color: var(--bone);
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 1.2s .9s, transform 1.2s .9s cubic-bezier(.2,.8,.2,1);
+  transition: opacity .8s .2s, transform .8s .2s cubic-bezier(.2,.8,.2,1);
 }
 
 .hero-name {
@@ -1098,7 +1098,7 @@ html.has-cursor .cursor {
   top: 64vh;
   display: flex;
   justify-content: center;
-  font-size: clamp(48px, 10vw, 150px);
+  font-size: clamp(40px, 8.2vw, 150px);
   line-height: .8;
   font-weight: 900;
   font-variation-settings: "wdth" 125;
@@ -1132,6 +1132,94 @@ html.has-cursor .cursor {
   transform: none;
 }
 
+/* First-screen recruiter block: role, top projects, resume and contact */
+.hero-role {
+  font-family: var(--display);
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--cyan);
+  margin: 0 0 .5em;
+}
+
+.hero-line {
+  margin: 0 0 1em;
+}
+
+.hero-projects {
+  list-style: none;
+  margin: 0 0 1.1em;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.hero-projects button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25em .6em;
+  font-family: var(--display);
+  font-size: clamp(15px, 1.15vw, 18px);
+  font-weight: 700;
+  color: var(--bone);
+  padding: .3em 0;
+  border-bottom: 1px solid rgba(241, 245, 249, .14);
+  width: 100%;
+  transition: color .2s;
+}
+
+.hero-projects button span {
+  font-family: var(--mono);
+  font-size: .68em;
+  font-weight: 500;
+  color: var(--molten);
+}
+
+.hero-projects button:hover,
+.hero-projects button:focus-visible {
+  color: var(--cyan);
+}
+
+.hero-projects button:focus-visible,
+.hero-links a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-links a {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--bone);
+  text-decoration: none;
+  padding: 7px 12px;
+  border: 1px solid rgba(0, 242, 255, .35);
+  border-radius: 6px;
+  background: rgba(5, 6, 8, .55);
+  backdrop-filter: blur(6px);
+  transition: background .2s, color .2s;
+}
+
+.hero-links a:first-child {
+  background: var(--cyan);
+  color: var(--void);
+  border-color: var(--cyan);
+}
+
+.hero-links a:hover {
+  background: var(--cyan);
+  color: var(--void);
+}
+
 .hero-foot {
   position: absolute;
   left: var(--gutter);
@@ -1141,7 +1229,7 @@ html.has-cursor .cursor {
   justify-content: space-between;
   align-items: flex-end;
   opacity: 0;
-  transition: opacity 1s 1.4s;
+  transition: opacity .8s .6s;
 }
 
 .is-entered .hero-foot {
@@ -2010,9 +2098,13 @@ html.has-cursor .cursor {
 @media (max-aspect-ratio: 4/5) {
   .film { --f: 0%; }
   .world--back { z-index: 5; mix-blend-mode: overlay; }
-  .hero-name { top: auto; bottom: 19vh; flex-wrap: wrap; font-size: 20vw; line-height: .84; }
+  .hero-name { top: auto; bottom: 19vh; flex-wrap: wrap; font-size: 15vw; line-height: .84; }
   .hn.sp { width: 100%; height: 0; }
   .hero-intro { top: 12vh; max-width: 18em; }
+}
+
+@media (max-width: 1100px) {
+  .nav-mark em { display: none; }
 }
 
 @media (max-width: 860px) {
@@ -2047,3 +2139,48 @@ html.has-cursor .cursor {
   .hero-cue i::after { animation: none; }
   .stage-inner.is-shake { animation: none; }
 }
+
+/* Reduced motion: collapse the scroll-driven scenes into a normal page.
+   The engine adds body.reduce-motion and skips its scroll animations. */
+body.reduce-motion .story { height: auto; }
+body.reduce-motion .stage { position: relative; height: 100vh; height: 100svh; }
+body.reduce-motion .film,
+body.reduce-motion .ambient,
+body.reduce-motion .world,
+body.reduce-motion .index-tiles,
+body.reduce-motion .index-name,
+body.reduce-motion .rise,
+body.reduce-motion .shock,
+body.reduce-motion .flash,
+body.reduce-motion .hero-cue { display: none; }
+body.reduce-motion .hn,
+body.reduce-motion .hero-intro,
+body.reduce-motion .hero-foot { transition: none; }
+
+body.reduce-motion .work { height: auto; }
+body.reduce-motion .work-stage {
+  position: relative;
+  height: auto;
+  overflow: visible;
+  perspective: none;
+  padding: 4vh 0;
+}
+body.reduce-motion .screen {
+  position: relative;
+  inset: auto;
+  height: 88vh;
+  min-height: 560px;
+  margin: 0 4.5vw 4vh;
+  transform: none !important;
+  filter: none !important;
+}
+body.reduce-motion .screen-title span { animation: none; }
+
+body.reduce-motion .manifesto .w { opacity: 1; }
+
+body.reduce-motion .portal { height: auto; }
+body.reduce-motion .portal-stage { position: relative; height: 70vh; }
+body.reduce-motion #portalCanvas,
+body.reduce-motion .tunnel,
+body.reduce-motion .portal-line { display: none; }
+body.reduce-motion .portal-cta { opacity: 1 !important; pointer-events: auto; }

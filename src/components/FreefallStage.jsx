@@ -1,5 +1,6 @@
 // src/components/FreefallStage.jsx
 import React from 'react';
+import { PROFILE } from '../data/portfolioData';
 
 export default function FreefallStage() {
   const letters = ['V', 'A', 'R', 'D', 'H', 'A', 'N'];
@@ -10,7 +11,7 @@ export default function FreefallStage() {
   ];
 
   return (
-    <section className="story" id="story" aria-label="System Initialization Journey">
+    <section className="story" id="story" aria-label="Introduction">
       <div className="stage">
         <div className="stage-inner">
           <canvas className="ambient" id="ambient" aria-hidden="true"></canvas>
@@ -36,7 +37,7 @@ export default function FreefallStage() {
             </button>
             <button className="tile" data-go="1" data-cursor="Inspect" data-x=".30" data-y="-.26" data-s=".18" data-ar=".82" data-z="-60" data-d=".08">
               <img src="/assets/tiles/tile-2.svg" alt="Music Emotion Computer Vision" />
-              <span className="tile-cap">Music OpenCV // &lt;85ms Stream</span>
+              <span className="tile-cap">Music OpenCV // &gt;90% Accuracy</span>
             </button>
             <button className="tile" data-go="2" data-cursor="Inspect" data-x="-.33" data-y=".18" data-s=".12" data-ar="1" data-z="40" data-d=".18">
               <img src="/assets/tiles/tile-3.svg" alt="OmniPulse CLV Engine" />
@@ -59,10 +60,10 @@ export default function FreefallStage() {
             </button>
             <button className="tile" data-go="2" data-cursor="Inspect" data-x=".47" data-y="-.03" data-s=".13" data-ar=".7" data-z="-280" data-d=".34">
               <img src="/assets/tiles/tile-7.svg" alt="FastAPI Microservices" />
-              <span className="tile-cap">FastAPI // Sub-5ms Endpoints</span>
+              <span className="tile-cap">FastAPI // Sub-15ms Predictions</span>
             </button>
             <button className="tile tile--gen gen-type" data-go="services" data-cursor="Inspect" data-x="-.20" data-y=".41" data-s=".10" data-ar=".8" data-z="-160" data-d=".38">
-              <b>AI//CLOUD</b><span className="tile-cap">Recruiter Hub</span>
+              <b>AI//CLOUD</b><span className="tile-cap">Why Hire Me</span>
             </button>
             <button className="tile is-iris" data-go="deployments" data-cursor="Inspect" data-x=".19" data-y="-.42" data-s=".10" data-ar="1" data-z="-220" data-d=".42">
               <img src="/assets/tiles/tile-8.svg" alt="8 Production Deployments" />
@@ -86,10 +87,22 @@ export default function FreefallStage() {
 
           {/* Hero Section */}
           <div className="hero" id="hero">
-            <p className="hero-intro">
-              Python Full Stack Developer &amp; AWS Certified Cloud Practitioner.<br />
-              Architecting high-throughput microservices, MySQL query speedups (-25% latency), and real-time biometric vision. Shipped 8 production platforms.
-            </p>
+            {/* First screen: everything a recruiter needs, before any scroll or click */}
+            <div className="hero-intro">
+              <p className="hero-role">Python Full Stack Developer &middot; AWS Certified Cloud Practitioner</p>
+              <p className="hero-line">Python backends, AWS deployments, and ML features with measured results. 8 projects live.</p>
+              <ul className="hero-projects" aria-label="Featured projects">
+                <li><button data-go="0" data-cursor="View">Task Cloud Portal <span>-25% query latency</span></button></li>
+                <li><button data-go="2" data-cursor="View">OmniPulse CLV Engine <span>sub-15ms predictions</span></button></li>
+                <li><button data-go="1" data-cursor="View">Music Recommender <span>&gt;90% accuracy</span></button></li>
+              </ul>
+              <nav className="hero-links" aria-label="Resume and contact">
+                <a href={PROFILE.resumePdf} target="_blank" rel="noreferrer" data-cursor="Resume">Resume (PDF)</a>
+                <a href={`mailto:${PROFILE.email}`} data-cursor="Email">Email</a>
+                <a href={PROFILE.github} target="_blank" rel="noreferrer" data-cursor="GitHub">GitHub</a>
+                <a href={PROFILE.linkedin} target="_blank" rel="noreferrer" data-cursor="LinkedIn">LinkedIn</a>
+              </nav>
+            </div>
             <h1 className="hero-name" aria-label="Vardhan Yerramsetti">
               {heroNameChars.map((item, idx) => (
                 <span 
@@ -103,15 +116,15 @@ export default function FreefallStage() {
             </h1>
             <div className="hero-foot">
               <button className="hero-cue" data-jump="story:.2" data-cursor="Descend">
-                <span>Scroll to initiate descent</span>
+                <span>Scroll to explore</span>
                 <i></i>
               </button>
               <div className="hero-badge">
                 <span className="badge-dot"></span>
-                <span>KERNEL: 2026.4 &bull; AWS_CERT: ONLINE</span>
+                <span>Open to full stack &amp; cloud roles</span>
               </div>
               <button className="hero-skip" data-jump="work" data-cursor="Jump">
-                Skip to architectures &rarr;
+                Skip to projects &rarr;
               </button>
             </div>
           </div>
