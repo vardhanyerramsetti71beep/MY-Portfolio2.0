@@ -7,13 +7,13 @@ export default function TelemetryHUD() {
       <div className="hud-chapter">
         <span className="hud-num">01</span>
         <span className="hud-sep">//</span>
-        <span className="hud-name">The Descent</span>
+        <span className="hud-name">Intro</span>
       </div>
       <div className="hud-bar">
         <i></i>
       </div>
       <div className="hud-read" id="hudTelemetry">
-        LATENCY: 0.8ms &bull; DEPTH: 12,400m
+        SCROLL TO EXPLORE
       </div>
     </div>
   );

@@ -19,25 +19,25 @@ export default function ProductionDeploymentsReel() {
   };
 
   return (
-    <section id="deployments" className="py-24 relative overflow-hidden" aria-label="8 Verified Production Deployments">
+    <section id="deployments" className="py-24 relative overflow-hidden" aria-label="All Projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-mono tracking-wider shadow-[0_0_15px_rgba(0,240,255,0.25)]">
             <Layers className="w-3.5 h-3.5 text-cyan-400" />
-            <span>AUTHENTIC PRODUCTION REEL // 8 VERIFIED APPS</span>
+            <span>ALL 8 PROJECTS // LIVE DEMOS + SOURCE</span>
           </div>
 
           <h2 className="font-display font-black text-3xl sm:text-5xl text-white tracking-tight uppercase">
-            Engineered for Scale. <br className="hidden sm:inline" />
+            All Projects. <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
-              Validated in Production.
+              Live and open source.
             </span>
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg">
-            Every platform is live on Vercel and AWS, backed by authentic GitHub repositories, and architected to solve measurable latency and business problems.
+            Every project is live on Vercel or AWS, with its source code on GitHub.
           </p>
 
           {/* Filter Pills */}

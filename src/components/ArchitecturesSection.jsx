@@ -16,7 +16,7 @@ export default function ArchitecturesSection() {
       desc: 'A multi-tenant cloud asset and task management portal. Engineered stateless Python Flask microservices and normalized 3NF MySQL schemas with compound B-Tree indexing, reducing query latency from 18.4ms to 13.8ms (-25%).',
       stack: 'Python, Flask REST API, React.js, MySQL, AWS EC2/S3, Docker',
       role: 'Cloud Systems & Database Architect',
-      metric: '-25% Query Latency • 99.99% AWS Storage SLA',
+      metric: '-25% Query Latency (18.4ms → 13.8ms)',
       year: '2026',
       live: 'https://task-cloud-portal.vercel.app/',
       github: 'https://github.com/vardhanyerramsetti71beep/task-cloud-portal',
@@ -26,16 +26,16 @@ export default function ArchitecturesSection() {
     {
       id: 'music-recommender',
       num: '02',
-      type: 'Computer Vision & Realtime Streaming',
+      type: 'Computer Vision & Machine Learning',
       title: 'Music Emotion Recommender',
       marquee: 'Music Emotion Recommender  Music Emotion Recommender  ',
-      ringText: 'MUSIC EMOTION RECOMMENDER — OPENCV COMPUTER VISION — SCIKIT-LEARN >90% ACCURACY — <85MS STREAM LATENCY — 2026 —',
+      ringText: 'MUSIC EMOTION RECOMMENDER — OPENCV COMPUTER VISION — SCIKIT-LEARN >90% ACCURACY — LIVE WEBCAM INPUT — 2026 —',
       ringId: 'ring1',
       img: '/assets/projects/prism-ai.svg',
-      desc: 'Real-time biometric facial emotion classifier. Replaced static song selection with an OpenCV landmark feature matrix and Scikit-learn multi-class model streaming mood vectors into a responsive Flask RESTful API under 85ms.',
+      desc: 'Recommends music from your facial expression. An OpenCV pipeline reads facial landmarks from a live webcam stream, a Scikit-learn model classifies the emotion with >90% accuracy, and a Flask REST API serves a matching playlist.',
       stack: 'Python, OpenCV, Flask REST API, Scikit-learn, Web Audio API',
       role: 'AI & Computer Vision Engineer',
-      metric: '>90% Classification Accuracy • <85ms Stream Latency',
+      metric: '>90% Classification Accuracy',
       year: '2026',
       live: 'https://music-recommending.vercel.app/',
       github: 'https://github.com/vardhanyerramsetti71beep/music-recommending',
@@ -54,7 +54,7 @@ export default function ArchitecturesSection() {
       desc: 'Enterprise customer lifetime value and churn risk forecast engine. Implemented BG/NBD probabilistic purchase transaction models and Gamma-Gamma monetary distribution formulas via FastAPI to project 12-month forward customer equity.',
       stack: 'FastAPI, Scikit-learn, BG/NBD, Gamma-Gamma, Python',
       role: 'Predictive Analytics & Backend Architect',
-      metric: 'BG/NBD Probabilistic Churn • 12-Month Lifetime Value',
+      metric: 'Sub-15ms Predictions • 12-Month Lifetime Value',
       year: '2026',
       live: 'https://omni-pulse-enterprise-clv-churn-int-teal.vercel.app/',
       github: 'https://github.com/vardhanyerramsetti71beep/OmniPulse-Enterprise-CLV-Churn-Intelligence-Engine',
@@ -83,7 +83,7 @@ export default function ArchitecturesSection() {
   ];
 
   return (
-    <section className="work" id="work" aria-label="Selected Flagship Architectures">
+    <section className="work" id="work" aria-label="Featured Projects">
       <div className="work-stage">
         {cases.map((c, idx) => (
           <article 
@@ -92,9 +92,9 @@ export default function ArchitecturesSection() {
             style={{ '--c': c.color }}
           >
             <header className="screen-bar">
-              <span>System Architecture {c.num} // {c.type}</span>
+              <span>Project {c.num} // {c.type}</span>
               <span>{c.title}</span>
-              <span>Case {idx + 1} of {cases.length}</span>
+              <span>{idx + 1} of {cases.length}</span>
             </header>
 
             <div className="screen-title" aria-hidden="true">
@@ -136,7 +136,7 @@ export default function ArchitecturesSection() {
                 rel="noreferrer"
                 data-cursor="Launch"
               >
-                <span>Launch Live System</span>
+                <span>Live Demo</span>
                 <ExternalLink className="w-3.5 h-3.5 inline ml-1.5" />
               </a>
 

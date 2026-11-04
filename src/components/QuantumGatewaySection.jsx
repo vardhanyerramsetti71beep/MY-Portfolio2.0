@@ -6,35 +6,35 @@ export default function QuantumGatewaySection() {
   const handleCopyEmail = () => {
     const email = 'vardhanyerramsetti71@gmail.com';
     navigator.clipboard.writeText(email).then(() => {
-      freefallEngine.showToast(`Terminal address copied: ${email}`);
+      freefallEngine.showToast(`Email copied: ${email}`);
       Sound.tick();
     }).catch(() => {
-      freefallEngine.showToast(`Terminal address: ${email}`);
+      freefallEngine.showToast(`Email: ${email}`);
     });
   };
 
   return (
-    <section className="portal" id="portal" aria-label="The Quantum Gateway">
+    <section className="portal" id="portal" aria-label="Get in touch">
       <div className="portal-stage">
-        <canvas id="portalCanvas" aria-label="3D hyperspace warp tunnel accelerating through computational spacetime"></canvas>
+        <canvas id="portalCanvas" aria-hidden="true"></canvas>
         <div className="tunnel" aria-hidden="true">
           <div className="tunnel-cam"></div>
         </div>
         <div className="portal-shade" aria-hidden="true"></div>
 
-        <p className="portal-line" data-w=".02,.2">Every complex challenge begins as raw entropy.</p>
-        <p className="portal-line" data-w=".22,.44">The best systems compress chaos into deterministic order.</p>
-        <p className="portal-line" data-w=".48,.72">This is where we build high-throughput scale.</p>
+        <p className="portal-line" data-w=".02,.2">Every project starts as a messy problem.</p>
+        <p className="portal-line" data-w=".22,.44">Good engineering turns it into something reliable.</p>
+        <p className="portal-line" data-w=".48,.72">Let&apos;s build the next one together.</p>
 
         <div className="portal-cta">
-          <h2>Let&apos;s architect something that redefines what is possible.</h2>
+          <h2>Hiring for a Python or cloud role? Let&apos;s talk.</h2>
           <div className="portal-actions">
             <a 
               className="btn btn--solid magnet" 
               href="mailto:vardhanyerramsetti71@gmail.com?subject=Engineering%20Opportunity" 
-              data-cursor="Transmit"
+              data-cursor="Email"
             >
-              Initiate Uplink
+              Email Me
             </a>
             <button 
               className="btn magnet" 
@@ -42,7 +42,7 @@ export default function QuantumGatewaySection() {
               onClick={handleCopyEmail}
               data-cursor="Copy"
             >
-              Copy Terminal Address
+              Copy Email
             </button>
           </div>
         </div>

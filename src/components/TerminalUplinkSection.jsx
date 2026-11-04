@@ -6,7 +6,7 @@ export default function TerminalUplinkSection() {
   return (
     <footer className="contact" id="contact">
       <p className="contact-kicker">
-        Accepting high-impact Python full-stack engineering roles, AWS cloud architecture, and microservice partnerships.
+        Open to Python full stack, backend, and cloud engineering roles.
       </p>
 
       <a 
@@ -56,7 +56,7 @@ export default function TerminalUplinkSection() {
               rel="noopener noreferrer" 
               data-cursor="Open"
             >
-              Verified Deployments
+              Previous Portfolio
             </a>
           </li>
         </ul>
@@ -71,22 +71,22 @@ export default function TerminalUplinkSection() {
           onClick={() => freefallEngine.scrollToSection('top')}
           data-cursor="Ascend"
         >
-          Ascend Again &uarr;
+          Back to top &uarr;
         </button>
       </div>
 
       <div className="contact-bottom">
         <p className="contact-legal">
-          &copy; 2026 Vardhan Yerramsetti. Engineered with gravity &amp; autonomous cloud compute.
+          &copy; 2026 Vardhan Yerramsetti. Built with React, Vite, and the Web Audio API.
         </p>
-        <div className="contact-telemetry">
-          <span>RUNTIME: STABLE</span>
+        <div className="contact-telemetry" aria-hidden="true">
+          <span>PYTHON</span>
           <span className="sep">&bull;</span>
-          <span>AWS_CERT_ID: VALIDATED</span>
+          <span>FASTAPI &amp; FLASK</span>
           <span className="sep">&bull;</span>
-          <span>LATENCY: -25% OPTIMIZED</span>
+          <span>REACT</span>
           <span className="sep">&bull;</span>
-          <span>SYS_HASH: #0x8E3A</span>
+          <span>AWS</span>
         </div>
       </div>
     </footer>

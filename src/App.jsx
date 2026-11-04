@@ -2,7 +2,6 @@
 // Vardhan Yerramsetti — Freefall 2.0 Cinematic Portfolio
 import React, { useState, useEffect } from 'react';
 import { freefallEngine, Sound } from './engine/freefallEngine';
-import SystemLoader from './components/SystemLoader';
 import Navbar from './components/Navbar';
 import SystemIndexModal from './components/SystemIndexModal';
 import TelemetryHUD from './components/TelemetryHUD';
@@ -25,6 +24,8 @@ export default function App() {
 
   useEffect(() => {
     freefallEngine.init();
+    // No entry gate: show the site right away, muted. Sound stays one click (or the M key) away.
+    freefallEngine.enterSystem(false);
 
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
@@ -46,9 +47,6 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-[#050608] text-slate-100 font-display">
       
-      {/* 1. System Boot Loader with Sound Activation */}
-      <SystemLoader />
-
       {/* 2. Top Navigation Chrome */}
       <Navbar 
         onToggleMenu={() => setIsMenuOpen(prev => !prev)}
@@ -84,16 +82,16 @@ export default function App() {
         {/* Core Technology Matrix Infinite Marquee */}
         <TechMarquee />
 
-        {/* Chapter 4: Capabilities & Recruiter Hub */}
+        {/* Chapter 4: Skills & Why Hire Me */}
         <CapabilitiesSection onOpenResume={() => setIsResumeOpen(true)} />
 
-        {/* Chapter 5: 8 Verified Production Deployments Reel */}
+        {/* Chapter 5: All Projects */}
         <ProductionDeploymentsReel />
 
-        {/* Chapter 6: The Quantum Gateway Tunnel */}
+        {/* Chapter 6: Portal tunnel, a short transition into Contact */}
         <QuantumGatewaySection />
 
-        {/* Chapter 7: Terminal Uplink & Live Clocks */}
+        {/* Chapter 7: Contact */}
         <TerminalUplinkSection />
       </main>
 
@@ -105,7 +103,7 @@ export default function App() {
 
       {/* Persistent Quick Contact Floating Dock */}
       <aside 
-        aria-label="Recruiter Quick Dock"
+        aria-label="Quick contact"
         className="fixed bottom-5 right-5 z-40 hidden sm:flex items-center gap-2.5 p-1.5 rounded-2xl bg-[#090d19]/90 border border-cyan-500/40 backdrop-blur-xl shadow-[0_0_30px_rgba(0,240,255,0.25)]"
       >
         <button
@@ -117,7 +115,7 @@ export default function App() {
           data-cursor="Resume"
         >
           <FileText className="w-3.5 h-3.5 text-cyan-400" />
-          <span>ATS Resume</span>
+          <span>Resume</span>
         </button>
 
         <a
@@ -129,7 +127,7 @@ export default function App() {
           data-cursor="WhatsApp"
         >
           <MessageSquare className="w-3.5 h-3.5" />
-          <span>WhatsApp Uplink</span>
+          <span>WhatsApp</span>
         </a>
       </aside>
 

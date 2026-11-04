@@ -37,7 +37,7 @@ export default function CertificationsSection() {
           </div>
 
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
-            Certified Cloud &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400">Systems Mastery</span>
+            Certified Cloud &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-400">Credentials</span>
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg">

@@ -478,11 +478,11 @@ const WORLD = {
     back: [
       ['Deterministic', 'xl ghost cyan'],
       ['fault tolerant', 'serif'],
-      ['Self-Healing', 'xl molten'],
-      ['zero downtime', 'serif molten'],
-      ['Autonomous Scale', 'l ghost'],
-      ['Sub-85ms Inference', 'serif'],
-      ['Production Proven', 'l cyan'],
+      ['-25% Query Latency', 'xl molten'],
+      ['>90% Accuracy', 'serif molten'],
+      ['AWS Certified', 'l ghost'],
+      ['Sub-15ms Inference', 'serif'],
+      ['8 Live Projects', 'l cyan'],
     ],
     front: [],
   },
@@ -500,9 +500,9 @@ const LINES = [
 
 const CTAS = [
   ['Explore Flagships', 'work', 'fall', -0.3],
-  ['Initiate Uplink', 'contact', 'fall', 0.32],
+  ['Contact Me', 'contact', 'fall', 0.32],
   ['Explore Flagships', 'work', 'rise', 0.3],
-  ['Initiate Uplink', 'contact', 'rise', -0.28],
+  ['Contact Me', 'contact', 'rise', -0.28],
 ];
 
 // ---------- Freefall Engine Orchestrator Class ----------
@@ -556,8 +556,13 @@ export class FreefallEngine {
     if (portalCanvas) this.genPortal = new GenerativePortal(portalCanvas);
     if (ambientCanvas) this.ambient = new Ambient(ambientCanvas);
 
+    // Reduced motion: no smooth-scroll hijack, no scroll-driven 3D scenes.
+    // freefall.css turns the site into a normal scrolling page under body.reduce-motion.
+    this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.body.classList.toggle('reduce-motion', this.reduced);
+
     // Initialize Lenis
-    try {
+    if (!this.reduced) try {
       this.lenis = new Lenis({
         duration: 1.15,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -922,7 +927,14 @@ export class FreefallEngine {
         } else {
           const screens = document.querySelectorAll('.screen');
           const screen = screens[+idx];
-          if (screen) this.scrollToSection(screen);
+          const L = this.layout.work;
+          if (screen && L && !this.reduced) {
+            // Screens are stacked in one sticky stage, so jump to the scroll
+            // position where screen idx is fully in view (see updateWork).
+            const dest = L.top + ((+idx + 0.15) / screens.length) * (L.h - this.S.H);
+            if (this.lenis) this.lenis.scrollTo(dest);
+            else window.scrollTo({ top: dest, behavior: 'smooth' });
+          } else if (screen) this.scrollToSection(screen);
           else this.scrollToSection('work');
         }
         Sound.tick();
@@ -1255,12 +1267,12 @@ export class FreefallEngine {
     const hudBar = document.querySelector('.hud-bar i');
     if (hudBar) hudBar.style.transform = `scaleX(${f2(prog)})`;
 
-    let num = '01', name = 'The Descent', telemetry = 'LATENCY: 0.8ms • DEPTH: 12,400m';
+    let num = '01', name = 'Intro', telemetry = 'SCROLL TO EXPLORE';
 
     if (this.S.y < (this.layout.story?.top || 0) + (this.layout.story?.h || 0)) {
       const sp = clamp((this.S.y - (this.layout.story?.top || 0)) / ((this.layout.story?.h || this.S.H) - this.S.H));
       const alt = Math.round(lerp(12400, 0, sp));
-      telemetry = `LATENCY: 0.8ms • DEPTH: ${alt.toLocaleString()}m`;
+      telemetry = `DEPTH: ${alt.toLocaleString()}m`;
       if (sp < this.CUT) {
         num = '01'; name = 'The Descent';
       } else if (sp < 0.65) {
@@ -1271,20 +1283,20 @@ export class FreefallEngine {
         num = '04'; name = 'Architecture Index';
       }
     } else if (this.S.y < (this.layout.work?.top || 0) + (this.layout.work?.h || 0)) {
-      num = '05'; name = 'Flagship Systems';
-      telemetry = 'STATUS: DISTRIBUTED RUNTIME • 99.999% SLA';
+      num = '05'; name = 'Featured Projects';
+      telemetry = '4 FLAGSHIP PROJECTS • LIVE DEMOS';
     } else if (this.S.y < (this.layout.about?.top || 0) + (this.layout.about?.h || 0)) {
-      num = '06'; name = 'Philosophy';
-      telemetry = 'STATE: DETERMINISTIC SCALE • AWS CERTIFIED';
+      num = '06'; name = 'About';
+      telemetry = 'PYTHON FULL STACK • AWS CERTIFIED';
     } else if (this.S.y < (this.layout.services?.top || 0) + (this.layout.services?.h || 0)) {
-      num = '07'; name = 'Capabilities & Recruiter Hub';
+      num = '07'; name = 'Skills & Why Hire Me';
       telemetry = 'SPECIALIZATIONS: FULL STACK & APPLIED ML';
     } else if (this.S.y < (this.layout.portal?.top || 0) + (this.layout.portal?.h || 0)) {
-      num = '08'; name = 'Quantum Gateway';
-      telemetry = 'UPLINK: SYNCHRONIZING WEIGHTS';
+      num = '08'; name = 'All Projects';
+      telemetry = '8 LIVE PROJECTS';
     } else {
-      num = '09'; name = 'Terminal Uplink';
-      telemetry = 'SYSTEM: READY FOR TRANSMISSION';
+      num = '09'; name = 'Contact';
+      telemetry = 'OPEN TO ROLES • IST (UTC+5:30)';
     }
 
     const hudNum = document.querySelector('.hud-num');
@@ -1337,7 +1349,9 @@ export class FreefallEngine {
       this.prevScrollY = this.S.y;
     }
 
-    if (this.S.entered) {
+    if (this.S.entered && this.reduced) {
+      this.updateHUD();
+    } else if (this.S.entered) {
       this.updateStory();
       this.updateWork();
       this.updateAbout();
