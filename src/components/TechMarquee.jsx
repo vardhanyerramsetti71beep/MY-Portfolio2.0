@@ -31,7 +31,7 @@ export default function TechMarquee() {
           <span className="o">Plotly 3D Manifolds</span>
           <span>Microservices</span>
           <span className="o">JWT Stateless Auth</span>
-          <span>8 Live Platforms</span>
+          <span>9 Live Platforms</span>
         </div>
       </div>
     </div>

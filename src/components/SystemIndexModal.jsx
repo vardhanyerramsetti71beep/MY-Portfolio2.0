@@ -10,7 +10,7 @@ export default function SystemIndexModal({ isOpen, onClose }) {
     { label: 'Featured Projects', jump: 'work', img: '/assets/projects/nexus-core.svg' },
     { label: 'About', jump: 'about', img: '/assets/tiles/tile-4.svg' },
     { label: 'Skills & Why Hire Me', jump: 'services', img: '/assets/projects/synapse-db.svg' },
-    { label: 'All 8 Projects', jump: 'deployments', img: '/assets/projects/prism-ai.svg' },
+    { label: 'All 9 Projects', jump: 'deployments', img: '/assets/projects/prism-ai.svg' },
     { label: 'Contact', jump: 'contact', img: '/assets/tiles/tile-7.svg' },
   ];
 

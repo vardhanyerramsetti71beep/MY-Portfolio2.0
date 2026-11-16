@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Vardhan Yerramsetti",
   title: "Python Full Stack Developer & AWS Certified Cloud Practitioner",
   subtitle: "High-Throughput Microservices • Enterprise Cloud Architectures • Real-Time Computer Vision & ML",
-  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 8 projects live today.",
+  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 9 projects live today.",
   location: "Andhra Pradesh, India",
   email: "vardhanyerramsetti71@gmail.com",
   phone: "+91 7386033417",
@@ -14,10 +14,10 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/vardhan-yerramsetti/",
   livePortfolio: "https://my-portfolio-vardhan-yerramsetti.vercel.app/",
   resumePdf: "/Vardhan_Yerramsetti_Resume.pdf",
-  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 8 production deployments across AWS and Vercel.",
+  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 9 production deployments across AWS and Vercel.",
   hook: "Zero-fluff engineering. Measurable throughput. Production-proven cloud microservices.",
   metrics: [
-    { label: "Production Web Apps", value: "8", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
+    { label: "Production Web Apps", value: "9", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
     { label: "Query Latency Reduction", value: "-25", suffix: "%", detail: "Compound B-Tree indexing on relational schemas" },
     { label: "Computer Vision Accuracy", value: ">90", suffix: "%", detail: "Real-time OpenCV multi-class emotion classification" },
     { label: "Data Integrity & Logistics", value: "99", suffix: "%", detail: "Supervised high-volume supply chain operations at Flipkart" }
@@ -28,7 +28,7 @@ export const RECRUITER_PILLARS = [
   {
     icon: "Rocket",
     title: "Immediate Day-1 Productivity",
-    desc: "Shipped 8 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
+    desc: "Shipped 9 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
   },
   {
     icon: "Cloud",
@@ -191,6 +191,24 @@ export const PROJECTS = [
     pitch: "Full-featured survey generation engine with dynamic relational schema binding in MySQL.",
     solution: "Engineered a full-featured survey creation and response aggregation engine in Python and Flask. Implemented a 3NF relational database schema in MySQL using Flask-SQLAlchemy with support for multiple-choice, text, checkbox inputs, and automated result charts.",
     architecture: "Survey Model ➔ Dynamic Form Generator ➔ Foreign Key Relational Persistence ➔ Analytical Response View"
+  },
+  {
+    id: "amara-jewellery",
+    index: "09",
+    title: "AMARA Fine Jewellery Concept Site",
+    badge: "Rebrand & Computer Vision",
+    category: "AI & Computer Vision",
+    tags: ["Python", "OpenCV", "GSAP ScrollTrigger", "Lenis", "Vercel"],
+    live: "https://amara-jewellery-five.vercel.app/",
+    github: "https://github.com/vardhanyerramsetti71beep/amara-jewellery",
+    metrics: [
+      { label: "Frames Re-lettered", value: "183" },
+      { label: "Hero Film", value: "61 Frames" },
+      { label: "Metals", value: "3 Previews" }
+    ],
+    pitch: "Adapted scroll-driven jewellery concept, rebranded frame by frame with a Python + OpenCV pipeline.",
+    solution: "Adapted and rebranded Gireesh Kumar Reddy's CALLA scroll-driven jewellery concept as AMARA. Wrote a Python + OpenCV pipeline that found the old name stamped on the ring box in all 183 animation frames, painted it out with texture from the gaps between the letters and printed the new name at the same angle and in the same foil colours; built the hero film by cutting the ring out of its 61 turntable frames; fixed a hidden overlay that blocked every button; and added a catalogue section with white and rose gold previews.",
+    architecture: "Rendered Frame Sequences ➔ OpenCV Logo Detection & Texture Inpainting ➔ Re-lettered WebP Frames ➔ GSAP ScrollTrigger Canvas Playback ➔ Vercel Git Deploys"
   }
 ];
 

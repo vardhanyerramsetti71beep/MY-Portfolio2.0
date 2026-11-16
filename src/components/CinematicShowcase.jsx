@@ -42,7 +42,7 @@ export default function CinematicShowcase() {
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-400/40 text-cyan-300 text-xs font-mono tracking-wider shadow-[0_0_15px_rgba(0,240,255,0.25)]">
             <Layers className="w-3.5 h-3.5 text-cyan-400" />
-            <span>CINEMATIC PROJECT REEL // 8 PRODUCTION APPS</span>
+            <span>CINEMATIC PROJECT REEL // 9 PRODUCTION APPS</span>
           </div>
 
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">

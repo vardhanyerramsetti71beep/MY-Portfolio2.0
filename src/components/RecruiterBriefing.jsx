@@ -37,7 +37,7 @@ export default function RecruiterBriefing({ onOpenResume }) {
     ? quickSkills 
     : quickSkills.filter(s => s.name.toLowerCase().includes(skillSearch.toLowerCase()) || s.tag.toLowerCase().includes(skillSearch.toLowerCase()));
 
-  const pitchText = `Hi! I found Vardhan Yerramsetti — a Python Full Stack Developer & AWS Certified Cloud Practitioner. He has built and deployed 8 live production web apps, optimized MySQL query latency by 25%, and engineered computer vision pipelines with >90% accuracy. Resume & live deployments: https://my-portfolio-vardhan-yerramsetti.vercel.app/`;
+  const pitchText = `Hi! I found Vardhan Yerramsetti — a Python Full Stack Developer & AWS Certified Cloud Practitioner. He has built and deployed 9 live production web apps, optimized MySQL query latency by 25%, and engineered computer vision pipelines with >90% accuracy. Resume & live deployments: https://my-portfolio-vardhan-yerramsetti.vercel.app/`;
 
   const handleCopyPitch = () => {
     soundManager.playLaserBlip();
@@ -128,7 +128,7 @@ export default function RecruiterBriefing({ onOpenResume }) {
 
               <div className="p-4 rounded-xl bg-black/60 border border-slate-700/80 font-mono text-xs text-slate-300 leading-relaxed relative">
                 <p>
-                  &quot;Hi team, I found <span className="text-cyan-300 font-semibold">Vardhan Yerramsetti</span> — Python Full Stack &amp; AWS Certified Cloud Architect. He built <span className="text-amber-300 font-semibold">8 live production platforms</span>, cut relational DB query latency by <span className="text-emerald-300 font-semibold">25%</span>, and built OpenCV biometric ML models with <span className="text-purple-300 font-semibold">&gt;90% accuracy</span>.&quot;
+                  &quot;Hi team, I found <span className="text-cyan-300 font-semibold">Vardhan Yerramsetti</span> — Python Full Stack &amp; AWS Certified Cloud Architect. He built <span className="text-amber-300 font-semibold">9 live production platforms</span>, cut relational DB query latency by <span className="text-emerald-300 font-semibold">25%</span>, and built OpenCV biometric ML models with <span className="text-purple-300 font-semibold">&gt;90% accuracy</span>.&quot;
                 </p>
 
                 <button
