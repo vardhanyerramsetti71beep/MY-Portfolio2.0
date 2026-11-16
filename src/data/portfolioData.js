@@ -276,8 +276,9 @@ export const EXPERIENCE = [
   {
     id: "instakart",
     role: "Operations and Logistics Associate",
-    company: "Instakart Services Private Limited",
-    division: "Flipkart Logistics & Supply Chain",
+    company: "Quess Corp Limited",
+    division: "deployed at Instakart Services, Flipkart Logistics",
+    client: "Instakart Services, Flipkart Logistics",
     period: "Jan 2026 – Apr 2026",
     location: "Andhra Pradesh, India",
     type: "Industry Operations & Data Integrity",
@@ -290,6 +291,25 @@ export const EXPERIENCE = [
       { label: "Data Integrity", value: "99%" },
       { label: "Throughput Boost", value: "+15%" },
       { label: "Scope", value: "Dispatch & Inventory" }
+    ]
+  },
+  {
+    id: "marketing-coordinator",
+    role: "Direct Marketing Coordinator",
+    company: "Quess Corp Limited",
+    division: "deployed at Future Generali Total Health Insurance",
+    client: "Future Generali Total Health Insurance",
+    period: "Sep 2023 – Dec 2023",
+    location: "Andhra Pradesh, India",
+    type: "Data-Driven Marketing Analytics",
+    highlights: [
+      "Executed targeted digital campaigns across multi-touch customer channels, engaging 5,000+ prospective leads.",
+      "Analyzed conversion data and customer demographic funnels, driving a 10% uplift in qualified lead acquisition."
+    ],
+    stats: [
+      { label: "Prospects Reached", value: "5,000+" },
+      { label: "Conversion Lift", value: "+10%" },
+      { label: "Funnel Analysis", value: "Multi-channel" }
     ]
   },
   {
@@ -308,24 +328,6 @@ export const EXPERIENCE = [
       { label: "Students Mentored", value: "40+" },
       { label: "Core Focus", value: "DSA & OOP" },
       { label: "Labs", value: "Weekly" }
-    ]
-  },
-  {
-    id: "marketing-coordinator",
-    role: "Direct Marketing Coordinator",
-    company: "Future Generali Total Health Insurance",
-    division: "Strategic Acquisition Team",
-    period: "Aug 2022 – Jan 2023",
-    location: "Andhra Pradesh, India",
-    type: "Data-Driven Marketing Analytics",
-    highlights: [
-      "Executed targeted digital campaigns across multi-touch customer channels, engaging 5,000+ prospective leads.",
-      "Analyzed conversion data and customer demographic funnels, driving a 10% uplift in qualified lead acquisition."
-    ],
-    stats: [
-      { label: "Prospects Reached", value: "5,000+" },
-      { label: "Conversion Lift", value: "+10%" },
-      { label: "Funnel Analysis", value: "Multi-channel" }
     ]
   }
 ];

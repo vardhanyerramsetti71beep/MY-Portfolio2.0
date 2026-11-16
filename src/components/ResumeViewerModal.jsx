@@ -198,7 +198,7 @@ export default function ResumeViewerModal({ isOpen, onClose }) {
                 {EXPERIENCE.map((exp) => (
                   <div key={exp.id} className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1.5">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                      <span className="font-bold text-white text-sm">{exp.role} — {exp.company}</span>
+                      <span className="font-bold text-white text-sm">{exp.role} — {exp.company}{exp.client ? ` (at ${exp.client})` : ''}</span>
                       <span className="text-[11px] font-mono text-slate-400">{exp.period}</span>
                     </div>
                     <ul className="list-disc list-inside text-xs text-slate-300 space-y-1">
