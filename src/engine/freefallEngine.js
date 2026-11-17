@@ -482,7 +482,7 @@ const WORLD = {
       ['>90% Accuracy', 'serif molten'],
       ['AWS Certified', 'l ghost'],
       ['Sub-15ms Inference', 'serif'],
-      ['9 Live Projects', 'l cyan'],
+      ['10 Live Projects', 'l cyan'],
     ],
     front: [],
   },
@@ -1293,7 +1293,7 @@ export class FreefallEngine {
       telemetry = 'SPECIALIZATIONS: FULL STACK & APPLIED ML';
     } else if (this.S.y < (this.layout.portal?.top || 0) + (this.layout.portal?.h || 0)) {
       num = '08'; name = 'All Projects';
-      telemetry = '9 LIVE PROJECTS';
+      telemetry = '10 LIVE PROJECTS';
     } else {
       num = '09'; name = 'Contact';
       telemetry = 'OPEN TO ROLES • IST (UTC+5:30)';

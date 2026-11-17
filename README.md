@@ -40,14 +40,14 @@ Told in one continuous descent: kinetic 3D typography rushing past in perspectiv
 ### 5. **Chapter 4: Capabilities & Recruiter Hub**
 - Interactive capability items with floating cursor thumbnail previews.
 - Recruiter Decision Grid ("Why Hire Vardhan on Day 1"):
-  - 9 Shipped Platforms end-to-end
+  - 10 Shipped Platforms end-to-end
   - AWS Certified Cloud Foundation
   - Verified Latency Cut (-25% query speedup)
   - Applied Machine Learning & Vision (>90% accuracy)
 - Quick launch button to ATS Resume Vault and instant WhatsApp uplink.
 
-### 6. **Chapter 5: 9 Verified Production Deployments Reel**
-- Filterable showcase (All 9, Full Stack & Cloud, AI & Computer Vision).
+### 6. **Chapter 5: 10 Verified Production Deployments Reel**
+- Filterable showcase (All 10, Full Stack & Cloud, AI & Computer Vision).
 - Detailed cards with direct verified live links, GitHub repositories, and architectural highlights.
 
 ### 7. **Chapter 6: The Quantum Gateway / Portal**
@@ -125,12 +125,12 @@ portfolio2.0/
     │   ├── ManifestoSection.jsx         # Chapter 3: Word-by-word illuminated manifesto
     │   ├── TechMarquee.jsx              # Bidirectional technology tickers
     │   ├── CapabilitiesSection.jsx      # Chapter 4: Specializations & Recruiter Decision Matrix
-    │   ├── ProductionDeploymentsReel.jsx# Chapter 5: 9 verified production web apps
+    │   ├── ProductionDeploymentsReel.jsx# Chapter 5: 10 verified production web apps
     │   ├── QuantumGatewaySection.jsx    # Chapter 6: 3D hyperspace neon arch tunnel
     │   ├── TerminalUplinkSection.jsx    # Chapter 7: Contact uplink, IST clock, telemetry
     │   └── ResumeViewerModal.jsx        # Full ATS resume & PDF download vault
     └── data/
-        └── portfolioData.js             # Master profile registry, 9 verified apps, and metrics
+        └── portfolioData.js             # Master profile registry, 10 verified apps, and metrics
 ```
 
 ---

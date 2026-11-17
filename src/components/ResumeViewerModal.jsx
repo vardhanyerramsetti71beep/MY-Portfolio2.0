@@ -147,7 +147,7 @@ export default function ResumeViewerModal({ isOpen, onClose }) {
                   Professional Summary
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Results-driven <strong>Python Full Stack Developer</strong> and <strong>AWS Certified Cloud Practitioner</strong> with foundational expertise in Data Science, Machine Learning, and cloud microservices. Proficient in architecting high-performance backend APIs using Flask and FastAPI, implementing mathematical and machine learning models (BG/NBD, Gamma-Gamma, OpenCV), engineering normalized relational database schemas with <strong>-25% query latency optimizations</strong>, and crafting reactive frontend applications in React.js and Next.js. Backed by 9 production deployments across AWS and Vercel.
+                  Results-driven <strong>Python Full Stack Developer</strong> and <strong>AWS Certified Cloud Practitioner</strong> with foundational expertise in Data Science, Machine Learning, and cloud microservices. Proficient in architecting high-performance backend APIs using Flask and FastAPI, implementing mathematical and machine learning models (BG/NBD, Gamma-Gamma, OpenCV), engineering normalized relational database schemas with <strong>-25% query latency optimizations</strong>, and crafting reactive frontend applications in React.js and Next.js. Backed by 10 production deployments across AWS and Vercel.
                 </p>
               </div>
 

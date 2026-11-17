@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Vardhan Yerramsetti",
   title: "Python Full Stack Developer & AWS Certified Cloud Practitioner",
   subtitle: "High-Throughput Microservices • Enterprise Cloud Architectures • Real-Time Computer Vision & ML",
-  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 9 projects live today.",
+  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 10 projects live today.",
   location: "Andhra Pradesh, India",
   email: "vardhanyerramsetti71@gmail.com",
   phone: "+91 7386033417",
@@ -14,10 +14,10 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/vardhan-yerramsetti/",
   livePortfolio: "https://my-portfolio-vardhan-yerramsetti.vercel.app/",
   resumePdf: "/Vardhan_Yerramsetti_Resume.pdf",
-  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 9 production deployments across AWS and Vercel.",
+  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 10 production deployments across AWS and Vercel.",
   hook: "Zero-fluff engineering. Measurable throughput. Production-proven cloud microservices.",
   metrics: [
-    { label: "Production Web Apps", value: "9", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
+    { label: "Production Web Apps", value: "10", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
     { label: "Query Latency Reduction", value: "-25", suffix: "%", detail: "Compound B-Tree indexing on relational schemas" },
     { label: "Computer Vision Accuracy", value: ">90", suffix: "%", detail: "Real-time OpenCV multi-class emotion classification" },
     { label: "Data Integrity & Logistics", value: "99", suffix: "%", detail: "Supervised high-volume supply chain operations at Flipkart" }
@@ -28,7 +28,7 @@ export const RECRUITER_PILLARS = [
   {
     icon: "Rocket",
     title: "Immediate Day-1 Productivity",
-    desc: "Shipped 9 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
+    desc: "Shipped 10 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
   },
   {
     icon: "Cloud",
@@ -209,6 +209,24 @@ export const PROJECTS = [
     pitch: "Adapted scroll-driven jewellery concept, rebranded frame by frame with a Python + OpenCV pipeline.",
     solution: "Adapted and rebranded Gireesh Kumar Reddy's CALLA scroll-driven jewellery concept as AMARA. Wrote a Python + OpenCV pipeline that found the old name stamped on the ring box in all 183 animation frames, painted it out with texture from the gaps between the letters and printed the new name at the same angle and in the same foil colours; built the hero film by cutting the ring out of its 61 turntable frames; fixed a hidden overlay that blocked every button; and added a catalogue section with white and rose gold previews.",
     architecture: "Rendered Frame Sequences ➔ OpenCV Logo Detection & Texture Inpainting ➔ Re-lettered WebP Frames ➔ GSAP ScrollTrigger Canvas Playback ➔ Vercel Git Deploys"
+  },
+  {
+    id: "ms-dhoni-tribute",
+    index: "10",
+    title: "MS Dhoni Cricket Career Tribute",
+    badge: "Sports Data & Video",
+    category: "Full Stack & Cloud",
+    tags: ["JavaScript (ES6+)", "HTML5", "CSS3", "SVG", "Vercel"],
+    live: "https://ms-dhoni-tribute.vercel.app/",
+    github: "https://github.com/vardhanyerramsetti71beep/ms-dhoni-tribute",
+    metrics: [
+      { label: "IPL Seasons", value: "19 Charted" },
+      { label: "Captaincy Results", value: "567" },
+      { label: "Official Clips", value: "8 Embeds" }
+    ],
+    pitch: "Data-driven fan site on MS Dhoni's career with interactive charts and lazy-loaded official highlights.",
+    solution: "Built a one-page fan site, current to Dhoni's IPL retirement in November 2026. It renders captaincy win and loss bars for Tests, ODIs, T20Is and the IPL from data, an interactive 19-season IPL runs chart with a detail panel, and a grid of eight official ICC and Cricbuzz clips, each checked with YouTube oEmbed and loaded only when tapped. His public-domain autograph writes itself across an SVG camera lens. No dependencies and no build step.",
+    architecture: "Verified Stats Data ➔ DOM-Rendered Win/Loss Bars & Season Chart ➔ IntersectionObserver Reveals ➔ Click-to-Load YouTube Embeds ➔ Vercel CLI Deploy"
   }
 ];
 
