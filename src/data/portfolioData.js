@@ -5,7 +5,7 @@ export const PROFILE = {
   name: "Vardhan Yerramsetti",
   title: "Python Full Stack Developer & AWS Certified Cloud Practitioner",
   subtitle: "High-Throughput Microservices • Enterprise Cloud Architectures • Real-Time Computer Vision & ML",
-  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 10 projects live today.",
+  tagline: "I build Python backends, cloud deployments and ML features, and I measure the results. 11 projects live today.",
   location: "Andhra Pradesh, India",
   email: "vardhanyerramsetti71@gmail.com",
   phone: "+91 7386033417",
@@ -14,10 +14,10 @@ export const PROFILE = {
   linkedin: "https://www.linkedin.com/in/vardhan-yerramsetti/",
   livePortfolio: "https://my-portfolio-vardhan-yerramsetti.vercel.app/",
   resumePdf: "/Vardhan_Yerramsetti_Resume.pdf",
-  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 10 production deployments across AWS and Vercel.",
+  bio: "Results-driven Python Full Stack Developer and AWS Certified Cloud Practitioner with expertise in Data Science, Machine Learning, and cloud microservices. Builds backend APIs with Flask and FastAPI, implements ML models (BG/NBD, Gamma-Gamma, OpenCV), designs normalized MySQL schemas (-25% query latency), and builds frontends in React.js and Next.js. Backed by 11 production deployments across AWS and Vercel.",
   hook: "Zero-fluff engineering. Measurable throughput. Production-proven cloud microservices.",
   metrics: [
-    { label: "Production Web Apps", value: "10", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
+    { label: "Production Web Apps", value: "11", suffix: " Live", detail: "Live on Vercel & AWS, each with public source code" },
     { label: "Query Latency Reduction", value: "-25", suffix: "%", detail: "Compound B-Tree indexing on relational schemas" },
     { label: "Computer Vision Accuracy", value: ">90", suffix: "%", detail: "Real-time OpenCV multi-class emotion classification" },
     { label: "Data Integrity & Logistics", value: "99", suffix: "%", detail: "Supervised high-volume supply chain operations at Flipkart" }
@@ -28,7 +28,7 @@ export const RECRUITER_PILLARS = [
   {
     icon: "Rocket",
     title: "Immediate Day-1 Productivity",
-    desc: "Shipped 10 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
+    desc: "Shipped 11 live projects end-to-end, each with a public GitHub repository. Comfortable with Git workflows, modular codebases, and Vercel deployments."
   },
   {
     icon: "Cloud",
@@ -227,6 +227,24 @@ export const PROJECTS = [
     pitch: "Data-driven fan site on MS Dhoni's career with interactive charts and lazy-loaded official highlights.",
     solution: "Built a one-page fan site, current to Dhoni's IPL retirement in November 2026. It renders captaincy win and loss bars for Tests, ODIs, T20Is and the IPL from data, an interactive 19-season IPL runs chart with a detail panel, and a grid of eight official ICC and Cricbuzz clips, each checked with YouTube oEmbed and loaded only when tapped. His public-domain autograph writes itself across an SVG camera lens. No dependencies and no build step.",
     architecture: "Verified Stats Data ➔ DOM-Rendered Win/Loss Bars & Season Chart ➔ IntersectionObserver Reveals ➔ Click-to-Load YouTube Embeds ➔ Vercel CLI Deploy"
+  },
+  {
+    id: "saltline",
+    index: "11",
+    title: "SALTLINE Playable Road Game Teaser",
+    badge: "3D Browser Game",
+    category: "Full Stack & Cloud",
+    tags: ["React", "TypeScript", "Three.js", "Web Audio API", "Vercel"],
+    live: "https://saltline-one.vercel.app/",
+    github: "https://github.com/vardhanyerramsetti71beep/saltline",
+    metrics: [
+      { label: "Route Length", value: "580 km" },
+      { label: "Regions", value: "4" },
+      { label: "Media Files", value: "0" }
+    ],
+    pitch: "Playable 3D road game teaser with a garage, a synthesized radio and artwork generated entirely in code.",
+    solution: "Built a playable teaser for an invented road game in React, TypeScript and Three.js. Players drive 580 km through four regions on three lives, choose and respray three cars in a 3D garage, tune a radio whose three stations are synthesized live with the Web Audio API, hunt six secrets and download a driver's card. All artwork is generated in code, so the site ships no image, audio or video files.",
+    architecture: "React Chapters ➔ Zustand Game State ➔ Three.js Road & Garage Scenes ➔ Web Audio Synthesis ➔ Canvas Driver's Card ➔ Vercel CLI Deploy"
   }
 ];
 

@@ -106,7 +106,7 @@ export default function HeroSection({ onOpenResume }) {
               </span>
               <span>ENTERPRISE FULL-STACK & AWS CLOUD ARCHITECT</span>
               <span className="text-slate-500">•</span>
-              <span className="text-amber-400 font-semibold">10 PRODUCTION DEPLOYMENTS</span>
+              <span className="text-amber-400 font-semibold">11 PRODUCTION DEPLOYMENTS</span>
             </div>
 
             {/* Cinematic Headline */}
@@ -132,7 +132,7 @@ export default function HeroSection({ onOpenResume }) {
 
             {/* Recruiter-Tailored Value Proposition */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              I don’t just write code — I build <strong className="text-white font-semibold">high-concurrency Python microservices</strong>, deploy resilient <strong className="text-white font-semibold">AWS cloud infrastructures</strong>, and optimize relational databases for <strong className="text-cyan-400 font-semibold">-25% query latency</strong>. Shipped 10 production platforms end-to-end. Ready to deliver immediate ROI to your engineering team.
+              I don’t just write code — I build <strong className="text-white font-semibold">high-concurrency Python microservices</strong>, deploy resilient <strong className="text-white font-semibold">AWS cloud infrastructures</strong>, and optimize relational databases for <strong className="text-cyan-400 font-semibold">-25% query latency</strong>. Shipped 11 production platforms end-to-end. Ready to deliver immediate ROI to your engineering team.
             </p>
 
             {/* Fast-Track Recruiter CTA Bar */}
@@ -173,7 +173,7 @@ export default function HeroSection({ onOpenResume }) {
             {/* Production Telemetry Badges */}
             <div className="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto lg:mx-0">
               <div className="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/30 transition-all text-center lg:text-left">
-                <div className="font-display font-extrabold text-2xl text-cyan-400">10 Live</div>
+                <div className="font-display font-extrabold text-2xl text-cyan-400">11 Live</div>
                 <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Web Apps Shipped</div>
               </div>
               <div className="p-3 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/30 transition-all text-center lg:text-left">

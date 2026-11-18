@@ -31,14 +31,14 @@ export default function Footer({ onOpenResume }) {
               </span>
             </div>
             <p className="text-xs text-slate-400 max-w-sm">
-              Engineered for throughput. Certified for AWS cloud. Proven across 10 production applications.
+              Engineered for throughput. Certified for AWS cloud. Proven across 11 production applications.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono">
             <a href="#recruiter" className="hover:text-cyan-400 transition-colors">Recruiter Briefing</a>
-            <a href="#projects" className="hover:text-cyan-400 transition-colors">10 Live Projects</a>
+            <a href="#projects" className="hover:text-cyan-400 transition-colors">11 Live Projects</a>
             <a href="#skills" className="hover:text-cyan-400 transition-colors">Tech Matrix</a>
             <a href="#experience" className="hover:text-cyan-400 transition-colors">Experience</a>
             <button 

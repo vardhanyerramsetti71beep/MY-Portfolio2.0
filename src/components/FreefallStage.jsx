@@ -66,7 +66,7 @@ export default function FreefallStage() {
               <b>AI//CLOUD</b><span className="tile-cap">Why Hire Me</span>
             </button>
             <button className="tile is-iris" data-go="deployments" data-cursor="Inspect" data-x=".19" data-y="-.42" data-s=".10" data-ar="1" data-z="-220" data-d=".42">
-              <img src="/assets/tiles/tile-8.svg" alt="10 Production Deployments" />
+              <img src="/assets/tiles/tile-8.svg" alt="11 Production Deployments" />
               <span className="tile-cap">9 Deployments // Verified Live</span>
             </button>
           </div>
@@ -90,7 +90,7 @@ export default function FreefallStage() {
             {/* First screen: everything a recruiter needs, before any scroll or click */}
             <div className="hero-intro">
               <p className="hero-role">Python Full Stack Developer &middot; AWS Certified Cloud Practitioner</p>
-              <p className="hero-line">Python backends, AWS deployments, and ML features with measured results. 10 projects live.</p>
+              <p className="hero-line">Python backends, AWS deployments, and ML features with measured results. 11 projects live.</p>
               <ul className="hero-projects" aria-label="Featured projects">
                 <li><button data-go="0" data-cursor="View">Task Cloud Portal <span>-25% query latency</span></button></li>
                 <li><button data-go="2" data-cursor="View">OmniPulse CLV Engine <span>sub-15ms predictions</span></button></li>

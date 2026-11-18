@@ -14,7 +14,7 @@ export default function ManifestoSection() {
         <div>
           <h4 className="about-subhead">Databases &amp; Performance</h4>
           <p>
-            Shipped 10 live projects across AWS and Vercel. Cut query time from 18.4ms to 13.8ms (-25%) by adding compound B-Tree indexes on (tenant_id, status). When a system slows down, I look at the data layer first.
+            Shipped 11 live projects across AWS and Vercel. Cut query time from 18.4ms to 13.8ms (-25%) by adding compound B-Tree indexes on (tenant_id, status). When a system slows down, I look at the data layer first.
           </p>
         </div>
         <div>

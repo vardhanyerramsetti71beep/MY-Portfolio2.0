@@ -71,7 +71,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               Why Hire Me
             </h3>
             <p className="text-slate-400 text-sm sm:text-base mt-1 max-w-xl">
-              10 live projects, an AWS certification, and measured performance results.
+              11 live projects, an AWS certification, and measured performance results.
             </p>
           </div>
 
@@ -106,7 +106,7 @@ export default function CapabilitiesSection({ onOpenResume }) {
               <Zap className="w-4 h-4" />
             </div>
             <h4 className="font-mono text-xs font-bold text-slate-200 uppercase tracking-wider mb-1">
-              10 Live Projects
+              11 Live Projects
             </h4>
             <p className="text-slate-400 text-xs leading-relaxed">
               Full-stack projects live on Vercel and AWS, each with a public GitHub repository.
