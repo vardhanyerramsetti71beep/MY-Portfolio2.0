@@ -238,13 +238,13 @@ export const PROJECTS = [
     live: "https://saltline-one.vercel.app/",
     github: "https://github.com/vardhanyerramsetti71beep/saltline",
     metrics: [
-      { label: "Route Length", value: "580 km" },
-      { label: "Regions", value: "4" },
+      { label: "Levels", value: "4" },
+      { label: "Cars & Trucks", value: "9" },
       { label: "Media Files", value: "0" }
     ],
-    pitch: "Playable 3D road game teaser with a garage, a synthesized radio and artwork generated entirely in code.",
-    solution: "Built a playable teaser for an invented road game in React, TypeScript and Three.js. Players drive 580 km through four regions on three lives, choose and respray three cars in a 3D garage, tune a radio whose three stations are synthesized live with the Web Audio API, hunt six secrets and download a driver's card. All artwork is generated in code, so the site ships no image, audio or video files.",
-    architecture: "React Chapters ➔ Zustand Game State ➔ Three.js Road & Garage Scenes ➔ Web Audio Synthesis ➔ Canvas Driver's Card ➔ Vercel CLI Deploy"
+    pitch: "Playable 3D road game with four levels, pit-stop parking, a coin shop for nine vehicles and a synthesized radio, all drawn in code.",
+    solution: "Built a playable teaser for an invented road game in React, TypeScript and Three.js. It has four levels on new maps, each ending at a pit stop where the player parks in a marked bay, with three lives per run, traffic and fuel that burns faster on boost. Coins collected on the road buy and upgrade nine cars and trucks, a radio with three stations synthesized live through the Web Audio API plays during the run, and every level hides six secrets. All artwork is generated in code, so the site ships no image, audio or video files.",
+    architecture: "React Chapters ➔ Zustand Game State & Saved Progress ➔ Three.js Levels, Traffic & Garage ➔ Web Audio Synthesis ➔ Canvas Driver's Card ➔ Vercel CLI Deploy"
   }
 ];
 
